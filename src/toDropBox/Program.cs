@@ -10,6 +10,10 @@ namespace toDropBox
   {
     static void Main(string[] args)
     {
+      Console.Out.WriteLine("Beginning toDropBox");
+      Console.Out.WriteLine("===============================");
+      Console.Out.WriteLine("\tReceived: [{0}]", string.Join(", ", args));
+
       if (args.Length != 2)
       {
         Console.Error.WriteLine("Invalid number of arguments. Usage: dropcopy <Source> <Destination>");
